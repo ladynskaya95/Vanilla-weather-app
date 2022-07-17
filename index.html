@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Weather</title>
-    <meta charset="UTF-8" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Grape+Nuts&family=Padauk&family=Russo+One&family=Staatliches&display=swap" rel="stylesheet">
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
     <div class="weather-app-cntr">
-    <div class="container">
-       <div class="weather-app">
-         <form action="" id="search-form">
-                    <div class="row">
-                        <div class="col-9">
-                    <input 
-                        type="search" 
-                        placeholder="Enter city name" 
-                        class="form-control" 
-                        id="city-input"
-                        autocomplete="off"
-                    />
+        <div class="container">
+            <div class="weather-app">
+                    <h1>WEATHER App</h1>
+                    <form action="" id="search-form">
+                        <div class="row">
+                            <div class="col-9">
+                                <input 
+                                type="search" 
+                                placeholder="Enter city name" 
+                                class="form-control" 
+                                id="city-input"
+                                autocomplete="off"
+                                />
+                                </div>
+                                <div class="col-3">
+                                    <input 
+                                    class="btn btn-light" 
+                                    id="search-btn"   
+                                    type="submit" 
+                                    value="Search"
+                                    />
                         </div>
-                        <div class="col-3">
-                    <input 
-                        class="btn btn-outline-secondary"    
-                        type="submit" 
-                        value="Search"
-                    />
-                        </div>
-                    </div>
-                </form>
+                            </div>
+                    </form>
                 <div class="overview">
-                    <h1 class="heading" id="city">Kiev</h1>
+                    <h2 class="heading" id="city">Kiev</h2>
                     <ul>
                         <li id="date">
                             Friday 17:00
@@ -48,25 +53,23 @@
                         <div class="col-6">
                             <div class="clearfix weather-icon">
                                 <img 
-                                    id="icon"
-                                    src="https://www.svgrepo.com/show/2858/clouds.svg" 
-                                    alt="cloudy" 
-                                    class="float-left"
+                                id="icon"
+                                src="https://www.svgrepo.com/show/2858/clouds.svg" 
+                                alt="cloudy" 
+                                class="float-left"
                                 />
-                                <div class="float-left">
-                                    <strong id="temperature-degree"></strong>
-                                    <span class="units">
-                                         <a href="" id="celsius" class="active">°C</a> | 
-                                        <a href="" id="fahrenheit" class="active">F°</a>
-                                    </span>
-                                </div>
+                            <div class="float-left">
+                                <strong id="temperature-degree"></strong>
+                                <span class="units"> °C 
+                                </span>
+                            </div>
                             </div>
                         </div>
                         <div class="col-6">
                             <span>
-                            <ul>
+                            <ul id="additional-info">
                                 <li>
-                                   Feels like: <span id="feels-like"></span>°C
+                                    Feels like: <span id="feels-like"></span>°C
                                 </li>
                                 <li>
                                     Humidity: <span id="humidity"></span>%
@@ -76,15 +79,16 @@
                                 </li>
                             </ul>
                             </span>
-                            <div class="weather-forecast" id="forecast">
-
-                </div>
                         </div>
-      <small>
-               <a href="https://github.com/ladynskaya95/Vanilla-weather-app" target="blank">Open-source code </a> by Nastya Ladynskaya
-      </small>
-    </div>
+                    </div>
                 </div>
+                <div class="weather-forecast" id="forecast"></div>
+            </div>
+        </div>
+            <small>
+                <a href="https://github.com/ladynskaya95/Vanilla-weather-app" target="blank">Open-source code </a> by Nastya Ladynskaya
+            </small>
+</div>
     <script src="src/index.js"></script>
-  </body>
+</body>
 </html>
