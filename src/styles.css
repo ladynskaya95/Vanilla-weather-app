@@ -1,236 +1,33 @@
-body{
-  max-width: 500px;
-  max-height: 800px;
-  align-items: center;
-  margin: 0 auto;
+h1 { 
+    color: rgb(67,96,125);
+    font-family: 'Russo One', sans-serif;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
 
-.application {
-  border: 1px silver solid;
-  border-radius: 15px;
-  background: linear-gradient(to top, #c1b5dd9c 0%, #98c0f5ab 100%);
-  margin: 0 auto;
-  margin-top: 15px;
-  min-width: 550px;
-  max-width: 550px !important;
-  padding: 15px;
-  padding-top: 10px;
-  box-shadow: 3px 3px 8px#777575a9;
-  height: 580px;
+li { 
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 100px;
+    font-size: 15px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.card-img-top {
-  width: 40px;
-  position: relative;
-  top: 20px;
+ul {
+    margin: 0 auto;
+    padding: 0;
 }
 
-.application:hover {
-  cursor: default;
+small {
+    font-size: 8px;
+    font-family: 'Fredoka', sans-serif;
 }
 
-.bg-light {
-  background-color: #d7cbe7bd !important;
-  width: 55%;
-  position: relative;
-  top: -157px;
-  height: 94px;
-}
-
-.top-buttons {
-  color: slategray;
-  font-weight: 100;
-  font-size: 4px !important;
-  margin: 0 auto;
-  padding: 0;
-  text-align: end;
-}
-
-.top-buttons:hover {
-  cursor: pointer;
-}
-
-.city-basic {
-  max-width: 50%;
-  position: relative;
-  padding-left: 17px !important;
-}
-
-.city-weather {
-  position: relative;
-  display: block;
-  padding-left: 10px;
-  max-width: 133px;
-  left: 92px;
-  top: 99px;
-}
-#city-display {
-  text-align: right;
-}
-
-h1 {
-  margin-top: 25px;
-  margin-left: 25px;
-  font-size: 40px !important;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 600 !important;
-  color: rgb(74, 69, 139);
-  position: relative;
-  left: 220px;
-}
-h2 {
-  margin-top: 25px;
-  margin-left: 25px;
-  font-size: 15px !important;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400 !important;
-  color: #4e4d4d9f;
-  position: relative;
-  left: 358px;
-  top: -20px;
-}
-
-.current-temp {
-  width: 100%;
-  padding: 10px;
-}
-
-h3 {
-  text-align: center;
-  font-size: 18px !important;
-  font-weight: 300;
-  font-style: italic;
-  color: #4e4d4dd0;
-}
-
-.bold-temp {
-  font-size: 20px !important;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 600 !important;
-  font-style: normal;
-  color: rgba(74, 69, 139, 0.479);
-  position: relative;
-  left: 154px;
-  top: 90px;
-}
-.forecast-cards {
-  padding: 10px;
-  min-height: 100px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-.card-img-top {
-  padding-top: 5px !important;
-}
-
-.temp {
-  text-align: center;
-  font-size: 15px;
-  font-weight: 700 !important;
-}
-
-.day {
-  text-align: center;
-  font-size: 13px;
-  padding: none !important;
-}
-
-h4 {
-  margin-top: 15px;
-  font-size: 12px !important;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400 !important;
-  text-align: center;
-  color: #4e4d4dd0;
-  position: relative;
-  top: -259px;
-  left: 351px;
-  width: 150px;
-}
-.units {
-  position: relative;
-  top: 84px;
-  left: 386px;
-  color: purple;
-}
-a {
-  color: purple;
-}
-
-form {
-  display: inline-block;
-  margin-left: 21%;
-
-  width: 70%;
-  padding: none;
-  position: relative;
-  top: -200px;
-}
-
-.search-bar {
-  border: 1px grey solid;
-  border-radius: 5px;
-  position: relative;
-
-  top: -50px;
-  left: 231px;
-}
-
-.search-button {
-  border: 1px grey solid;
-  border-radius: 5px;
-  background: rgba(74, 69, 139, 0.445);
-  color: azure;
-  position: relative;
-  top: -9px;
-  left: 66px;
-}
-.search-button:hover {
-  background: rgba(74, 69, 139, 0.815);
-}
-
-.current-button {
-  border: 1px grey solid;
-  border-radius: 5px;
-  background: rgba(72, 175, 118, 0.651);
-  color: azure;
-  position: relative;
-  top: -9px;
-  left: 66px;
-}
-
-#additional-info {
-  position: relative;
-  top: -269px;
-  left: 150px;
-  bottom: 125px;
-  bottom: 115px;
-  color: rgba(74, 69, 139, 0.745);
-}
-#additional-info li {
-  list-style: none;
-  font-size: 12px;
-  text-align: center;
-}
-
-.small-temp {
-  position: relative;
-  top: -25px;
-}
-.cel-far {
-  position: relative;
-  top: -25px;
-}
-
-.day {
-  position: relative;
-  top: -30px;
-}
-
- small {
-    font-size: .875em;
-    position: relative;
-    top: -130px;
-    left: 18px;
+.weather-app {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #BD7682;
+    border-radius: 15px;
 }
